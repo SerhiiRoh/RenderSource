@@ -1,0 +1,325 @@
+/* Спецификации */
+
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+    color: black;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+}
+
+.title {
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title__main {
+    font-size: 32px;
+}
+
+.title__text {
+    font-size: 20px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+.beige {
+    color: #dab497;
+}
+/* Первый экран */
+
+.header{
+    background: #72c0bd;
+    color: black;
+    padding-top: 58px;
+    padding-bottom: 105px;
+}
+.menu {
+    margin-top: 10px;
+
+}
+
+.menu__item {
+    margin: 0 17px;
+}
+
+.menu__item a {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.login {
+    text-align: center;
+    padding-top: 34px;
+}
+
+.login a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #9e2239;
+}
+
+.login a:hover {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.login a:focus {
+    text-decoration: none;
+    color: #72c0bd;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.offer {
+    margin-top: 117px;
+}
+
+.offer__title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.offer__intro {
+    font-size: 20px;
+    line-height: 1.3em;
+    width: 400px;
+}
+
+.offer__text {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #555555;
+    width: 400px;
+}
+
+.icons__item {
+    margin-right: 30px;
+}
+
+.icons__item a {
+    color: black;
+    font-size: 42px;
+    transition: all 0.3s ease;
+}
+
+.icons__item a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+.main {
+    margin-top: 100px;
+}
+
+.main__title {
+    font-size: 32px;
+}
+
+.main__intro {
+    font-size: 20px;
+    line-height: 1.5em;
+    width: 400px;
+}
+
+.main__text {
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.model {
+    display: block;
+    margin: 60px auto 0;
+}
+
+/* Второй экран */
+
+.feature__icon {
+    font-size: 50px;
+    margin-right: 37px;
+    color: black;
+}
+
+.feature__text {
+    color: #898989;
+}
+
+.feature {
+    margin-bottom: 65px;
+}
+
+/* Третий экран */
+
+.touch {
+    background: #9e2239;
+    color: white;
+}
+
+.form {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+}
+
+.form__input {
+    background: white;
+    font-size: 16px;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 5px;
+    width: 580px;
+    padding: 15px 0;
+    margin-right: 21px;
+    border: 0;
+    padding-left: 23px;
+    outline: none;
+}
+
+.form__btn {
+    font-family: "PT Sans", sans-serif;
+    background: #72c0bd;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 126px;
+    border: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+/* Футер */
+
+.footer{
+    background: #9e2239;
+    padding: 50px 0 94px;
+}
+
+.credits {
+    color: white;
+    text-align: center;
+    width: 184px;
+    margin: 0 auto;
+}
+
+/* Медиа запросы */
+
+@media screen and (max-width: 992px) {
+    .logo {
+        display: block;
+        margin: 30px auto;
+    }
+    .offer {
+        text-align: center;
+    }
+    .offer__text {
+        margin: 20px auto;
+        width: auto;
+    }
+    .offer__intro {
+        margin: 20px auto;
+    }
+    .icons {
+        justify-content: space-around;
+    }
+    .icons__item:nth-child(3){
+        margin-right: 0;
+    }
+    .form__input {
+        margin-right: 0;
+        width: 100%;
+    }
+    .form__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .title__text {
+        width: auto;
+    }
+    .model {
+        width: 100%;
+    }
+    .feature__icon {
+        width: 20px;
+    }
+    .feature__title {
+        margin-left: 20px;
+        width: auto;
+    }
+    .feature__text {
+        margin-left: 20px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 100%;
+    }
+
+    .model {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu__item {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .offer__text {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .offer__intro {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .form__input {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .form__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .feature__icon {
+        width: 20px;
+    }
+    .feature__title {
+        margin-left: 20px;
+        width: auto;
+    }
+    .feature__text {
+        margin-left: 20px;
+        width: auto;
+    }
+}
+
